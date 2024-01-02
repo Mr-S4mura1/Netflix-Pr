@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix | Clon</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="https://kit.fontawesome.com/cf1ad10ff3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/nficon2016.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <img class="banner banner_qr" src="./images/Banner.jpg" alt="" />
+    <div class="logo">
+      <a href="#"><img src="./images/Netflix_Logo_PMS.png" alt="" /></a>
+    </div>
+
+    <div class="login">
+      <div class="form">
+        <h1>Iniciar Sessión</h1>
+        <label for="content">
+          <input type="text" placeholder="Email o numero de télefono" />
+          <input type="password" placeholder="Contraseña" />
+          <button class="btn_login"><a href="#">Iniciar Sessión</a></button>
+        </label>
+      </div>
+
+      <div class="text_bottom">
+        <label for="check" class="check">
+          <input id="check" type="checkbox" value="true" name="RememberMe" tabindex="0" checked />
+          <span>Recuérdame</span>
+        </label>
+        <a href="#">¿Necesitas ayuda?</a>
+      </div>
+
+      <p class="primera">¿Primera vez en Netflix? <a href="#">Suscribete ahora.</a></p>
+      <p class="captcha">
+        El inicio de sesión está protegido por Google reCAPTCHA para comprobar que no eres un robot.
+        <span id="btn_ocultar" class="btn_ocultar"><b>Más info.</b></span>
+        <br />
+        <br />
+        <span class="ocultar_text" id="ocultar_text">
+          La información recopilada por Google reCAPTCHA está sujeta a la <a href="#" class="datos">Política de privacidad</a> y a
+          las <a href="" # class="datos">Condiciones del servicio</a> de Google, y se utiliza para proporcionar, mantener y
+          mejorar el servicio de reCAPTCHA, así como para fines generales de seguridad (Google no la utiliza para personalizar
+          publicidad).</span
+        >
+      </p>
+    </div>
+
+    <div class="footer">
+      <div class="footer_container">
+        <span>¿Preguntas? LLama al <a href="#">01 800 917 1564</a></span>
+
+        <ul>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Términos de uso</a></li>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Preferencias de cookies</a></li>
+          <li><a href="#">Información coorporativa</a></li>
+        </ul>
+
+        <button class="idiom"><i class="fa-solid fa-globe"></i><span>Español</span><i class="fa-solid fa-caret-down"></i></button>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

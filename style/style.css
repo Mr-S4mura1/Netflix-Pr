@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+body {
+  overflow-x: hidden;
+}
+.banner {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  filter: brightness(40%);
+  height: 148vh;
+}
+
+.logo {
+  width: 100%;
+  margin: 8px 16px;
+  cursor: pointer;
+}
+.logo img {
+  width: 13%;
+}
+.login {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 27%;
+  padding: 45px;
+  margin: auto;
+  height: 33rem;
+  margin-bottom: 5.3%;
+}
+.form h1 {
+  text-align: left;
+  font-size: 25px;
+  margin: 20px 0px;
+  color: white;
+  font-weight: 400;
+}
+.form input {
+  width: 100%;
+  padding: 13px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+}
+.form button {
+  width: 100%;
+  margin: 20px 0px 10px 0px;
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: white;
+}
+.btn_login a {
+  text-decoration: none;
+}
+.text_bottom {
+  font-size: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #b3b3b3;
+}
+.text_bottom a {
+  margin-left: 42%;
+  color: #9b9b9b;
+  text-decoration: none;
+}
+.text_bottom a:hover {
+  text-decoration: underline;
+}
+input[type="checkbox"]:checked {
+  left: 0;
+  color: #e50914;
+}
+.login p {
+  text-align: left;
+}
+.primera {
+  font-size: 85%;
+  margin-bottom: 10px;
+  color: #737373;
+}
+.primera a {
+  text-decoration: none;
+  color: white;
+}
+.primera a:hover {
+  text-decoration: underline;
+}
+.captcha {
+  font-size: 60%;
+  color: #8c8c8c;
+  width: 90%;
+}
+
+.ocultar_text {
+  display: none;
+  color: #7c7c7c;
+}
+.btn_ocultar {
+  cursor: pointer;
+}
+
+.datos {
+  color: rgb(43, 43, 184);
+}
+
+/* --------------------------------- Footer --------------------------------- */
+.footer {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.footer_container {
+  margin: auto;
+  padding: 30px;
+  width: 70%;
+  height: 40vh;
+}
+
+.footer_container span {
+  color: #757575;
+  font-size: 14px;
+}
+
+.footer_container span a {
+  color: #757575;
+  text-decoration: none;
+}
+
+.footer_container ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 10px;
+  gap: 10px;
+  width: 70%;
+  margin: 4% 0 5% 0;
+}
+
+.footer_container ul li a {
+  text-decoration: none;
+  color: #757575;
+}
+
+.footer_container button {
+  padding: 8px;
+  width: 15%;
+  border: 1px solid #333;
+  background-color: #000;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.footer_container button span {
+  color: whitesmoke;
+  margin: 0px 10px;
+  font-size: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              Diseño Responsive                             */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 740px) {
+  body {
+    background-color: #000;
+  }
+  .banner {
+    display: none;
+  }
+
+  .login {
+    width: 100%;
+    display: block;
+    margin-bottom: 0;
+    padding: 30px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+  .logo img {
+    width: 30%;
+  }
+
+  .form h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 35px;
+  }
+
+  .text_bottom {
+    font-size: 15px;
+  }
+  .text_bottom a {
+    margin-left: 82%;
+  }
+
+  .primera {
+    font-size: 100%;
+  }
+
+  .captcha {
+    font-size: 85%;
+  }
+  .footer_container {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .footer {
+    border-top: 1px solid white;
+  }
+
+  .footer_container ul {
+    font-size: 13px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 4% 0px;
+    width: 100%;
+  }
+
+  .footer_container button {
+    width: 20%;
+    padding: 13px;
+    margin-bottom: 40px;
+  }
+
+  .footer_container button span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .captcha {
+    font-size: 65%;
+  }
+
+  .footer_container button {
+    width: 30%;
+    padding: 13px;
+    margin-bottom: 40px;
+  }
+
+  .footer_container button span {
+    font-size: 10px;
+  }
+
+  .text_bottom {
+    font-size: 12px;
+  }
+
+  .text_bottom a {
+    margin-left: 63%;
+  }
+}
+
+@media (max-width: 355px) {
+  .primera {
+    font-size: 70%;
+  }
+
+  .footer_container {
+    height: 20vh;
+  }
+
+  .footer_container button {
+    width: 40%;
+    padding: 13px;
+    margin-bottom: 20px;
+  }
+
+  .footer_container ul {
+    font-size: 9px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 4% 0px;
+    width: 90%;
+  }
+
+  .footer_container span {
+    font-size: 10px;
+  }
+
+  .footer_container button {
+    width: 40%;
+    padding: 5px;
+    margin-bottom: 40px;
+  }
+
+  .footer_container button span {
+    font-size: 8px;
+  }
+
+  .text_bottom {
+    font-size: 8px;
+  }
+
+  .text_bottom a {
+    margin-left: 50%;
+  }
+}
